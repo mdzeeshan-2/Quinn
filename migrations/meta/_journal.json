@@ -15,6 +15,13 @@
       "when": 1704090950770,
       "tag": "0001_worthless_tigra",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1704183964783,
+      "tag": "0002_bumpy_amphibian",
+      "breakpoints": true
     }
   ]
 }
