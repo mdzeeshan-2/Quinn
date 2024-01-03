@@ -60,7 +60,7 @@ export const subscriptions = pgTable("subscriptions", {
     status: subscriptionStatus("status"),
     metadata: jsonb("metadata"),
     priceId: text("price_id").references(() => prices.id),
-    quantity: integer("quantity"),
+    // quantity: integer("quantity"),
     cancelAtPeriodEnd: boolean("cancel_at_period_end"),
     created: timestamp("created", { withTimezone: true, mode: "string" })
       .default(sql`now()`)
