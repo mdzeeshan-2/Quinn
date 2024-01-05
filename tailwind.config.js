@@ -273,6 +273,7 @@ module.exports = {
         "blueGray/700": "#334155",
         "blueGray/800": "#1e293b",
         "blueGray/900": "#0f172a",
+        
       },
       borderRadius: {
         lg: "var(--radius)",

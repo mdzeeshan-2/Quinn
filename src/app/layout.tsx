@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import db from "@/lib/supabase/db";
-// import { ThemeProvider } from "@/lib/providers/next-theme-provider";
+import { ThemeProvider } from "@/lib/providers/next-theme-provider";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark">
-        {/* <ThemeProvider attribute="class" defaultTheme="dark" enableSystem> */}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
         {children}
-        {/* </ThemeProvider> */}
+        </ThemeProvider>
         </body>
     </html>
   );
