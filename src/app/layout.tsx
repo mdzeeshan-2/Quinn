@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import db from "@/lib/supabase/db";
-import { ThemeProvider } from "@/lib/providers/next-theme-provider";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,13 +16,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // console.log(db);
+  console.log("Hllo");
   return (
     <html lang="en">
-      <body className="dark">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+      <body className={inter.className}>
         {children}
-        </ThemeProvider>
         </body>
     </html>
   );
