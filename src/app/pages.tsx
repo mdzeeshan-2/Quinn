@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-const page = () => {
-  return (
-    <div>Homepage</div>
-  )
-}
+// import React from 'react'
+// import Image from 'next/image'
+// const page = () => {
+//   return (
+//     <div>Homepage</div>
+//   )
+// }
 
-export default page
+// export default page
